@@ -4,6 +4,8 @@ import {Snapshot, Manifest, submitSnapshot} from '@github/dependency-submission-
 import {prepareBuildEnvironmentManifest, prepareDependencyManifest} from './process'
 
 async function run(): Promise<void> {
+  throw new Error('This action is deprecated, please update your workflows to use the new method: https://egym.atlassian.net/wiki/spaces/~382068954/blog/2024/02/13/1672642694/Update+Gradle+actions+in+2024+setup+and+dependency+submission');
+
   core.startGroup(`📘 Reading input values`)
   const useGradlew = core.getBooleanInput('use-gradlew')
   let gradleProjectPath = core.getMultilineInput('gradle-project-path')
