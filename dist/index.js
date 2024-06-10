@@ -287,6 +287,7 @@ const dependency_submission_toolkit_1 = __nccwpck_require__(9810);
 const process_1 = __nccwpck_require__(1647);
 function run() {
     return __awaiter(this, void 0, void 0, function* () {
+        throw new Error('This action is deprecated, please update your workflows to use the new method: https://egym.atlassian.net/wiki/spaces/~382068954/blog/2024/02/13/1672642694/Update+Gradle+actions+in+2024+setup+and+dependency+submission');
         core.startGroup(`📘 Reading input values`);
         const useGradlew = core.getBooleanInput('use-gradlew');
         let gradleProjectPath = core.getMultilineInput('gradle-project-path');
